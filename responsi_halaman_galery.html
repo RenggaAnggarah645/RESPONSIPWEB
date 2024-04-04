@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Pagaralam Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    body {
+      background-image: url('https://assets.pikiran-rakyat.com/crop/69x58:621x408/x/photo/2022/05/30/3047565544.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    #backBtn {
+      display: none; /* tombol kembali disembunyikan secara default */
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 500px; /* Mengatur tinggi gambar */
+      object-fit: cover; /* Memastikan gambar tetap terlihat baik tanpa distorsi */
+    }
+    .carousel-caption {
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 10px;
+    }
+    .carousel-caption p {
+      margin-bottom: 0;
+    }
+    .carousel-item {
+      text-align: center; /* Memastikan gambar tetap berada di tengah */
+      position: relative;
+    }
+    .carousel-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Lambang_Kota_Pagar_Alam.gif" alt="Logo Kota Pagaralam" style="height: 30px; margin-right: 10px;">
+      Selamat Datang di Pemerintahan Kota Pagaralam
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item text-dark">
+          <a class="nav-link text-white" href="./Responsi_halaman_home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./responsi_halaman_info_terbaru.html">Info Terbaru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./responsi_halaman_visi_misi.html">Visi dan Misi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="./responsi_halaman_publikasi.html">Publikasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./responsi_halaman_sekilas_pagaralam.html" >Sekilas Pagaralam</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+  <!-- Galeri Content -->
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center text-white h-100">
+
+    
+<!-- Wisata Carousel -->
+<div id="wisataCarousel" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 70%; display: none;">
+  <div class="carousel-inner" style="margin-bottom: 50px;">
+      <div class="carousel-item active">
+          <img src="https://paltv.disway.id/upload/1b9de84d46499104691e3be339ac033b.jpeg" class="d-block w-100" alt="Gunung Dempo">
+          <div class="carousel-info">
+              <h5>Gunung Dempo</h5>
+              <p>Salah satu objek wisata alam di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://images.tokopedia.net/blog-tokopedia-com/uploads/2019/01/wisata-pagaralam-2-Noyvesto.jpg" class="d-block w-100" alt="Air Terjun Maung">
+          <div class="carousel-info">
+              <h5>Air Terjun Maung</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <!-- New added carousel items -->
+      <div class="carousel-item">
+          <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/06/23/574547860.jpg" class="d-block w-100" alt="Air Terjun Napal Kuning">
+          <div class="carousel-info">
+              <h5>Air Terjun Napal Kuning</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2022/08/05/891663594.jpg" class="d-block w-100" alt="Air Terjun Lematang Indah">
+          <div class="carousel-info">
+              <h5>Air Terjun Lematang Indah</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://pbs.twimg.com/media/DKDy77nU8AAigzV.jpg:large" class="d-block w-100" alt="Air Terjun Curup Embun">
+          <div class="carousel-info">
+              <h5>Air Terjun Curup Embun</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://pagaralamtour.files.wordpress.com/2016/04/mangkok.jpg" class="d-block w-100" alt="Air Terjun Curup Mangkok">
+          <div class="carousel-info">
+              <h5>Air Terjun Curup Mangkok</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://giwang.sumselprov.go.id/api/uploads/destinations/destination_168750261535235.jpeg" class="d-block w-100" alt="Air Terjun Pintu Langit">
+          <div class="carousel-info">
+              <h5>Air Terjun Pintu Langit</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://www.gemanesia.id/wp-content/uploads/2024/01/images-14.jpeg" class="d-block w-100" alt="Air Terjun Tujuh Kenangan">
+          <div class="carousel-info">
+              <h5>Air Terjun Tujuh Kenangan</h5>
+              <p>Salah satu destinasi wisata air terjun di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://palpos.disway.id/upload/bf0659fe0b3595d138e31b1fea9a2638.jpeg" class="d-block w-100" alt="Kebun Raya Dempo">
+        <div class="carousel-info">
+            <h5>Kebun Raya Dempo</h5>
+            <p>Salah satu destinasi wisata tempat camp di Kota Pagaralam.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://okutimurnews.id/wp-content/uploads/2023/01/Wahana-dan-Fasilitas-Dusun-Camp-Pagaralam-jpg.webp" class="d-block w-100" alt="Dusun Camp">
+      <div class="carousel-info">
+          <h5>Dusun Camp</h5>
+          <p>Salah satu destinasi wisata tempat camp di Kota Pagaralam.</p>
+      </div>
+  </div>
+      <!-- End of new added carousel items -->
+  </div>
+  <a class="carousel-control-prev" href="#wisataCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#wisataCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  
+    
+ <!-- Pemerintahan Carousel -->
+<div id="pemerintahanCarousel" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 70%; display: none;">
+  <div class="carousel-inner" style="margin-bottom: 50px;">
+      <div class="carousel-item active">
+          <img src="https://cdn.timesmedia.co.id/images/2022/01/07/Kantor-Wali-Kota-Pagaralam-Sumatra-Selatan.jpg" class="d-block w-100" alt="Kantor Walikota">
+          <div class="carousel-info">
+              <h5>Kantor Walikota Kota Pagaralam</h5>
+              <p>Gedung kantor pemerintahan Walikota Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://sumselupdate.com/wp-content/uploads/2019/08/20190824_081322.jpg" class="d-block w-100" alt="Kantor DPRD Kota Pagaralam">
+          <div class="carousel-info">
+              <h5>Kantor DPRD Kota Pagaralam</h5>
+              <p>Gedung kantor pemerintahan Dewan Perwakilan Rakyat Daerah Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://palpres.disway.id/upload/6aa411b190bace45c5150eea516e81c5.jpg" class="d-block w-100" alt="Polres Pagaralam">
+          <div class="carousel-info">
+              <h5>Kantor Polres Kota Pagaralam</h5>
+              <p>Gedung kantor pemerintahan Kepolisian Resort Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://sumselupdate.com/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-02-at-16.07.01.jpeg" class="d-block w-100" alt="Rumah Sakit Kota Pagaralam">
+          <div class="carousel-info">
+              <h5>Rumah Sakit Kota Pagaralam</h5>
+              <p>Gedung rumah sakit di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <!-- New added carousel items -->
+      <div class="carousel-item">
+          <img src="https://www.rmolsumsel.id/uploads/images/2024/01/image_750x500_65ae1afa4b890.jpg" class="d-block w-100" alt="Kantor Pengadilan Agama Kota Pagaralam">
+          <div class="carousel-info">
+              <h5>Kantor Pengadilan Agama Kota Pagaralam</h5>
+              <p>Gedung Kantor Pengadilan Agama di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://pbs.twimg.com/profile_images/1287420216205430789/yJj8I0BC_400x400.jpg" class="d-block w-100" alt="Kantor Kejaksaan Negeri Kota Pagaralam">
+          <div class="carousel-info">
+              <h5>Kantor Kejaksaan Negeri Kota Pagaralam</h5>
+              <p>Gedung Kantor Kejaksaan Negeri di Kota Pagaralam.</p>
+          </div>
+      </div>
+      <!-- End of new added carousel items -->
+  </div>
+  <a class="carousel-control-prev" href="#pemerintahanCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#pemerintahanCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  
+    
+    <!-- Tombol -->
+    <div class="mb-4">
+      <button class="btn btn-primary mr-2" onclick="showWisata()">Wisata</button>
+      <button class="btn btn-primary" onclick="showPemerintahan()">Pemerintahan</button>
+      <button class="btn btn-primary" id="backBtn">Kembali</button> <!-- tombol kembali -->
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function showBackBtn() {
+      document.getElementById('backBtn').style.display = 'inline';
+    }
+    
+    function showWisata() {
+      document.getElementById('wisataCarousel').style.display = 'block';
+      document.getElementById('pemerintahanCarousel').style.display = 'none';
+      showBackBtn();
+    }
+    
+    function showPemerintahan() {
+      document.getElementById('wisataCarousel').style.display = 'none';
+      document.getElementById('pemerintahanCarousel').style.display = 'block';
+      showBackBtn();
+    }
+    
+    // Event listener untuk tombol kembali
+    document.getElementById('backBtn').addEventListener('click', function() {
+      document.getElementById('backBtn').style.display = 'none';
+      document.getElementById('wisataCarousel').style.display = 'none';
+      document.getElementById('pemerintahanCarousel').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

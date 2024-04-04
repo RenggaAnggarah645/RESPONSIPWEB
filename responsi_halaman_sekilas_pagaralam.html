@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Pagaralam Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    body {
+      background-image: url('https://assets.pikiran-rakyat.com/crop/69x58:621x408/x/photo/2022/05/30/3047565544.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    #backBtn {
+      display: none;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+    }
+
+    .carousel-caption p {
+      margin-bottom: 0;
+    }
+
+    .carousel-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .carousel-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Lambang_Kota_Pagar_Alam.gif" alt="Logo Kota Pagaralam" style="height: 30px; margin-right: 10px;">
+      Selamat Datang di Pemerintahan Kota Pagaralam
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item text-dark">
+          <a class="nav-link text-white" href="./Responsi_halaman_home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./responsi_halaman_info_terbaru.html">Info Terbaru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./responsi_halaman_galery.html">Galery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./responsi_halaman_visi_misi.html">Visi dan Misi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./responsi_halaman_publikasi.html">Publikasi</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Galeri Content -->
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center text-white h-100">
+
+
+    <div id="wisataCarousel" style="display: block;">
+      <div class="text-left" style="margin-bottom: 50px;">
+      
+        <p id="sejarahPagaralam" style="display: none;">
+            Kota Pagaralam adalah tentang perlawanan yang berlangsung lama dari orang-orang Pasemah terhadap pemerintahan Hindia Belanda pada abad ke-19. Perlawanan ini dipimpin oleh orang-orang Pasemah dan sekitarnya dan menjadi perlawanan terpanjang dalam sejarah perjuangan di Sumatera Selatan pada masa itu, berlangsung hampir 50 tahun lamanya (1821-1867). Meskipun awalnya orang Eropa, termasuk Thomas Stamford Raffles, tidak mengenali orang-orang Pasemah dengan baik, perlawanan mereka diakui dalam sejarah. Nama "Pasemah" sendiri mungkin berasal dari kesalahan pengucapan orang Belanda, sebagaimana disampaikan oleh Mohammad Saman, seorang budayawan dan sesepuh Besemah.
+
+Selain itu, asal-usul suku Besemah juga diceritakan melalui mitos atau legenda, yang memberikan gambaran tentang bagaimana dusun-dusun di Jagat Besemah terbentuk. Sistem pemerintahan tradisional di daerah Besemah disebut Lampik Empat Merdike Due dan merupakan republik yang sangat demokratis, di mana tanggung jawab dan kesetiaan sangat dihargai dan dijunjung tinggi oleh masyarakat Besemah.
+
+Sejarah ini mencerminkan semangat perlawanan dan kekuatan masyarakat Besemah dalam mempertahankan identitas dan kebudayaan mereka, serta menegaskan nilai-nilai demokrasi dan solidaritas yang tinggi dalam sistem pemerintahan tradisional mereka.
+        </p>
+        <button id="sejarahBtn" class="btn btn-primary" onclick="showDescription('sejarahPagaralam')">Baca Sejarah Kota Pagaralam</button>
+      </div>
+      <div class="text-left">
+     
+        <p id="tentangKotaPagaralam" style="display: none;">
+            Kota Pagar Alam, yang terletak di Provinsi Sumatera Selatan, memiliki sejarah yang kaya dan merupakan hasil dari pembentukan berdasarkan Undang-Undang Nomor 8 Tahun 2001. Sebelumnya, kota ini adalah bagian dari Kabupaten Lahat. Dengan luas wilayah sekitar 633,66 km² dan jumlah penduduk sekitar 126.181 jiwa, kota ini memiliki kepadatan penduduk sekitar 199 jiwa/km².
+
+            Secara geografis, Kota Pagar Alam berjarak sekitar 298 km dari Palembang dan 60 km dari barat daya Kabupaten Lahat. Wilayahnya berbatasan dengan Kabupaten Lahat, Kabupaten Muara Enim, Kabupaten Kaur, dan Kabupaten Empat Lawang. Tanahnya sebagian besar adalah latosol dan andosol, yang memberikan kesuburan tinggi dan menjadikan kota ini sebagai penghasil sayur-mayur dan buah-buahan.
+            
+            Dari segi demografi, kota ini memiliki beragam suku bangsa, termasuk suku Besemah, Jawa, Minang, Batak, serta kelompok etnis lainnya seperti Arab-Indonesia dan India-Indonesia. Pertumbuhan penduduknya cenderung meningkat, terutama karena faktor transmigrasi.
+            
+            Kota Pagar Alam memiliki potensi pariwisata yang besar, dengan banyaknya objek wisata alam dan purbakala seperti air terjun, situs megalitikum, dan danau. Di antara objek wisata yang terkenal adalah Batu Gong, perkebunan teh Lereng Dempo, Sungai Lematang Indah, dan berbagai air terjun seperti Curup Embun, Curup Mangkok, dan Curup Tujuh Kenangan.
+            
+            Dalam bidang pendidikan, kota ini memiliki beberapa perguruan tinggi swasta dan negeri yang menyediakan berbagai program studi. Tokoh-tokoh daerah yang terkenal berasal dari Kota Pagar Alam termasuk Komjen Pol. (Purn) Susno Duadji, Letjen TNI (Purn) Burhanudin Amin, dan Drs. H. Mukti Sulaiman.
+            
+            Transportasi di Kota Pagar Alam didukung oleh Bandara Atung Bungsu, yang melayani penerbangan menuju Palembang, Bengkulu, dan Jakarta. Di sektor ekonomi, salah satu produk unggulan kota ini adalah ARPA (Air Pagar Alam), air minum dalam kemasan yang diproduksi oleh PT. Ayek Besemah.
+            
+            Dengan segala potensi dan perkembangannya, Kota Pagar Alam menjadi destinasi menarik baik untuk wisata maupun investasi, serta menjadi tempat tinggal bagi masyarakat yang beragam etnis dan budaya.
+        </p>
+        <button id="tentangBtn" class="btn btn-primary" onclick="showDescription('tentangKotaPagaralam')">Baca Tentang Kota Pagaralam</button>
+      </div>
+    </div>
+
+    <!-- Button Kembali -->
+    <button id="backBtn" class="btn btn-secondary" onclick="hideDescription()">Kembali</button>
+
+  </div>
+
+  <!-- Bootstrap JS dan Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Fungsi untuk menampilkan deskripsi dan tombol kembali
+    function showDescription(id) {
+      // Sembunyikan tombol yang diklik
+      document.getElementById(id).style.display = "block";
+      // Sembunyikan tombol yang belum diklik
+      document.getElementById("sejarahBtn").style.display = "none";
+      document.getElementById("tentangBtn").style.display = "none";
+      // Tampilkan tombol kembali
+      document.getElementById("backBtn").style.display = "block";
+      // Ganti background
+      document.body.style.backgroundImage = "url('https://media.istockphoto.com/id/1055012794/vector/vector-realistic-isolated-black-brick-wall-background-for-template-and-layout-decoration.jpg?s=612x612&w=0&k=20&c=FuWrqe1oYtoNVgaS2OtpCOB9WnSg5hCd2X0PHXhiqc8=')";
+    }
+
+    // Fungsi untuk menyembunyikan deskripsi dan tombol kembali
+    function hideDescription() {
+      // Semua deskripsi disembunyikan
+      document.getElementById("sejarahPagaralam").style.display = "none";
+      document.getElementById("tentangKotaPagaralam").style.display = "none";
+      // Semua tombol ditampilkan kembali
+      document.getElementById("sejarahBtn").style.display = "block";
+      document.getElementById("tentangBtn").style.display = "block";
+      document.getElementById("backBtn").style.display = "none";
+      // Ganti kembali background ke default
+      document.body.style.backgroundImage = "url('https://assets.pikiran-rakyat.com/crop/69x58:621x408/x/photo/2022/05/30/3047565544.jpg')";
+    }
+  </script>
+</body>
+
+</html>
